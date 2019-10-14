@@ -3211,6 +3211,9 @@ body.active-sidebar .bg-overlay {
 /*--------------------------------------------------------------
     elepage style
 --------------------------------------------------------------*/
+.el-pagination{
+	float:left;
+}
 .el-pager{
 	position: relative;
 	display: flex;

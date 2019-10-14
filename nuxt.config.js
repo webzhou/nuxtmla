@@ -9,11 +9,15 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'referrer', content: 'no-referrer' },
       { hid: 'keywords', name: 'keywords', content: '' },
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    script: [
+      { src: 'https://hm.baidu.com/hm.js?492d2b17453d2eb3b30dd5a93485c1e6' }, /*引入百度统计的js*/
     ]
   },
   /*
@@ -33,6 +37,7 @@ export default {
   */
   plugins: [
     '~/plugins/axios',
+    '~/plugins/baidu',
     { src: '~/plugins/element-ui', ssr: true }
   ],
   /*
@@ -84,5 +89,8 @@ export default {
   env: {
     baseUrl: '/wpjson',
     apiUrl: '/api'
+  },
+  server: {
+    port: '3003'
   }
 }
