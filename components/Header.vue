@@ -107,7 +107,7 @@
         <a class="action-menu btn btn-light px-2 mb-4" @click="togglenav"><i class="text-lg iconfont icon-close-outline" /></a>
         <ul class="navbar-nav">
           <li class="menu-item">
-            <router-link :to="{ path: '/category/', query: { pagenum: 1 } }">
+            <router-link :to="{ path: '/', query: { pagenum: 1 } }">
               首页
             </router-link>
           </li>

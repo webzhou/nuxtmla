@@ -74,13 +74,13 @@ export default {
   },
   proxy: {
     '/wpjson': {
-      target: 'http://www.mla.xin/wp-json',
+      target: 'http://api.mla.xin/wp-json',
       pathRewrite: {
         '^/wpjson': '/'
       }
     },
     '/api': {
-      target: 'http://www.mla.xin/api',
+      target: 'http://api.mla.xin/api',
       pathRewrite: {
         '^/api': '/'
       }
