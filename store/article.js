@@ -18,7 +18,7 @@ export const actions = {
         data: { progress: false }
       })
       commit('setDetail', data)
-      return Promise.resolve()
+      return Promise.resolve(data)
     } catch (error) {
       return Promise.reject(error)
     }

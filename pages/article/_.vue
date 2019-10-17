@@ -66,6 +66,12 @@ export default {
       meta: [
         { hid: 'keywords', name: 'keywords', content: `${this.detail.article_info._seo_keywords}` || `${this.detail.excerpt.rendered}` },
         { hid: 'description', name: 'description', content: `${this.detail.article_info._seo_description}` || `${this.detail.excerpt.rendered}` }
+      ],
+      link: [
+        { rel: 'stylesheet', href: '/prism/prism.css' }
+      ],
+      script: [
+        { src: '/prism/prism.js' }
       ]
     }
   }

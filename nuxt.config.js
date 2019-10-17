@@ -17,7 +17,7 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     script: [
-      { src: 'https://hm.baidu.com/hm.js?492d2b17453d2eb3b30dd5a93485c1e6' }, /*引入百度统计的js*/
+      { src: 'https://hm.baidu.com/hm.js?492d2b17453d2eb3b30dd5a93485c1e6' }/*引入百度统计的js*/
     ]
   },
   /*
@@ -68,6 +68,7 @@ export default {
     /*
     ** You can extend webpack config here
     */
+    maxChunkSize: 350000,
     extractCSS: { allChunks: true },
     extend (config, ctx) {
     }

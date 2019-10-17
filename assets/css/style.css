@@ -357,11 +357,14 @@ figure {
 
 pre {
 	overflow-y: auto;
-	background-color: #fdfdfd;
+	background-color: #272822;
 	border: 1px solid #eee;
 	border-radius: 0;
 	padding: 15px;
 	margin: 20px 0;
+}
+pre code{
+	color: #f8f8f2;
 }
 
 svg.svg-inline--fa:not(:root) {
