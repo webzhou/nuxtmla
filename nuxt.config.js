@@ -85,11 +85,18 @@ export default {
       pathRewrite: {
         '^/api': '/'
       }
+    },
+    '/bilibili': {
+      target: 'http://space.bilibili.com/ajax/member',
+      pathRewrite: {
+        '^/bilibili': '/'
+      }
     }
   },
   env: {
     baseUrl: '/wpjson',
-    apiUrl: '/api'
+    apiUrl: '/api',
+    bilibiliUrl: '/bilibili'
   },
   server: {
     port: '3003'

@@ -72,10 +72,10 @@
                       羊毛
                     </router-link>
                   </li>
-                  <li>
-                    <a href="http://www.mla.xin/web">
-                      网站模板
-                    </a>
+                  <li class="menu-item">
+                    <router-link :to="{ path: '/vlog/', query: { tag_ID: 1101 } }" :class="{'nuxt-link-exact-active':$route.query.tag_ID===1101}">
+                      VLOG
+                    </router-link>
                   </li>
                   <li>
                     <a href="http://t.mla.xin" rel="nofollow">
